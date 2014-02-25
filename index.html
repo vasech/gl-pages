@@ -1,79 +1,153 @@
 <!DOCTYPE html>
 <html>
+<head>
+<meta charset="UTF-8">
+<title>Lidia</title>
+<style>
+body{
+	margin:50px 0 500px 0;
+	font-family: monaco;
+	font-size:15px;
+	line-height:12px;
+	letter-spacing: -3.7px;
+}
+#quiz{
+	position: absolute;
+	top:100px;
+	left:1000px;
+	letter-spacing: 0px;
+}
+#buttons{
+	max-width:400px;
+}
+</style>
+</head>
+<body>
+<span>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp.&nbsp.<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp...&nbsp/&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\|&nbsp.<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\_&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp////&nbsp&nbsp.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp/||/&nbsp&nbsp&nbsp&nbsp&nbsp––––<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\&nbsp._&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp////__/&nbsp/&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp/&nbsp|||&nbsp&nbsp&nbsp&nbsp/&nbsp&nbsp.<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\\&nbsp&nbsp&nbsp&nbsp&nbsp\&nbsp&nbsp&nbsp|////&nbsp&nbsp&nbsp&nbsp/&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp|||////&nbsp/&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp/<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp__xXXx\&nbsp&nbsp&nbsp&nbsp\&nbsp/////&nbsp&nbsp&nbsp/&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp|//|///&nbsp&nbsp&nbsp&nbsp/&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp/=/=-______<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp||XXXXXx\&nbsp&nbsp\|////&nbsp&nbsp&nbsp&nbsp/&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp/||||/&nbsp&nbsp&nbsp&nbsp/&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp//////:______<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|XXXXXXX|\&nbsp/////\&nbsp&nbsp&nbsp/&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp||||/&nbsp&nbsp&nbsp/&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp///&nbsp//&nbsp//==xXXXX=====-_<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp/XXX\x=---\\||/||||\//&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp//|||\&nbsp&nbsp/&nbsp&nbsp&nbsp&nbsp&nbsp//&nbsp&nbsp//////XXXXXXXxx===--_<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp/XXX\x=---\\||/||||\//&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp//|||\&nbsp&nbsp/&nbsp&nbsp&nbsp&nbsp&nbsp//&nbsp&nbsp//////XXXXXXXxx===--_<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp.&nbsp._&nbsp&nbsp&nbsp&nbsp|||YXXXX\////|&nbsp|&nbsp|&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|//||/||\\&nbsp&nbsp&nbsp///&nbsp&nbsp&nbsp/XXXXXXXXX\\\=-__<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp/====\\xxXXXXXXXXXXXXX\&nbsp|/&nbsp/&nbsp.&nbsp.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp.&nbsp|//||\||&nbsp&nbsp&nbsp///_///xXXXXXXXXXXXXXXXXXx===--_&nbsp.<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp/=&nbsp=&nbsp=&nbsp=&nbsp0XXXXXXXYXXXXXXX|&nbsp|/&nbsp|&nbsp|.&nbsp..___&nbsp.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp||||&nbsp&nbsp|&nbsp||&nbsp//XXXXXXXXHXXEXXXLXXLXXXOXLILXX====-_<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp--\=xxXXXXxXXXXXXXXX00XXXXXXX/|&nbsp|&nbspX&nbsp&nbsp&nbsp&nbsp===xX\\-.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp.:|XX\x|&nbsp||//XXXXXX0XXXXXXXXAXXXXXZXBUKAXX000CC&nbspc&nbsp.<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp.&nbsp&nbsp&nbsp==XXXXXXXXXXXXXXXXXX0000XXXX/&nbsp|&nbsp|XX&nbsp:&nbsp.&nbsp&nbsp&nbsp\\XX\\.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp::XXXXXXX00XXXXXXXXX0XXXXXXXXXXXXXXXXXXXX00C--.&nbsp:<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspxXXX==0=ZZXXXXXXXXXXXX00000XXXxXXx::&nbsp.&nbsp===&nbsp.&nbsp.\\\:&nbsp&nbsp.&nbsp&nbsp&nbsp&nbsp&nbsp///:XXXXXXXXXXXXXXXXXXX00XXXXXXXXXXXXXXXXX/XX00CC=-&nbsp.<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp--=xXxXXXXX==000XXXXXXXXXXX000000XX=XXXX:::&nbsp.===&nbsp__|\\\\:&nbsp|&nbsp&nbsp&nbsp///::XXXXXXXXXXXXXXXXXXXXXXXXXX00000XXXXXX/XXXXXXXXxXC=-<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspxxXXXXXXXXXXXXXXXXXXXXXXXXX00000XX00XXXXXXxxxX-&nbsp&nbsp\\\\\::|&nbsp/////xxXXXXXXXXXXXXXXXXXXXXXXXXX0000000XXXXXXX/XXXXXX|XXC-;<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp77xxXXXXXXXXXXXXXXXXXXXXXXXXXXX00000XXXXXXXXXXXxX&nbsp&nbspxXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX00000000XX0000XXXXXXX|XXXcC-<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp.&nbsp&nbsp&nbsp&nbsp77xXXXXXXXXXXXXXXXXXifXXXXXXXXXXXX000000kn0wYYYXXXXXXXXXXXXXXXXXXXX█████XXXXXXXXXX0XXXXXXXX000000000000X00XXXXXX0XXXXCC=-<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\&nbsp&nbsp&nbsp77xXXXXXXXXXXXXXXXXXXXXXXXXXXXY0XXUXXXXXXXXX█████████████████████████████████X████XXXXXXXXX000000000X00X00X000=====CCZC=--<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp\\xXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX000XX███████████████████████████████████Y██XXXXXXXXX00000000IIIXII0X0XX=====CCZZ==-<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\&nbsp&nbsp&nbsp\\xXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX████████████████████████████████████X██YXXXXXXXXX000000XIIIX0X00/XXX===C&nbspC&nbspC&nbsp-<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\___XXXXXXXXXXXXXXXXXXXYYYXXXXXXXXXXXXYYXYXYXXX█████████████████████████████████████Y█XXXXXX████XXXXXIIII00Z&nbspZ&nbspXXX===C&nbspcc&nbsp.<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspxXXX&nbsp&nbspXXXXXXXXXXXXXXXXXXXXYYYYYXXXXXXXXXXXXXXXXXXX█████████████████████████████████████Y██████████XXCCCIIII0000________CC&nbspc&nbsp.<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp_--XxxXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXUUXXXXXUXXXXX█████████████████████████████████████X█████████████XXXXXIIIIICCC___&nbsp&nbsp&nbsp&nbsp&nbspxCx..<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\xXXXXXXXXXXXXXXXXXX0XXXXXXXYYYUUUUUXXXXXXXXXXX████████████████████████████████████████████████████XXXXXIIIICCCCCxxx___&nbsp.<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp..\xXXXXXXXXXXXXXXXXXXX00XXXXXXXXXXXXXXXXXXXXXXX█████████████████████████████████████████████████████XXXXIIICXXXXXXXXXXCCccc___<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\\&nbsp\xXXXXXXXXXXXXXXXXXXX0XXXXXXXXXXXXXXXXXXXXXX████==██████████████████████████X█████████████████████XXXXXXXXXXXXXX===____<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\\&nbsp\xXXXXXXXXXXXXXXXXX000000000000000000██████████████████████████████████XXXXXX█████YY████████████XXXXXXXXXXXXXXXCc____<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\\x\xXXXX000XXXXX000000000XXXXXXXXXXXX00XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX███████YXXXXXXXXXXXXXXCCCc__<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\\&nbsp&nbsp&nbsp&nbsp\x\xXXXXXX0000000XXXXX=000XXXXXXXXXXXX00XXXVVVVVVVVVVVVVVVVVVVVVVVVVVVXXXXXXVXXXXXXXXXXX███XXXXXXXXX||XXXXXXXCCCCc&nbsp_&nbsp.<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\\___\xXXXXXXXXX000000XXXXXXXXXXXXXXXXXCCCCCVVVVVVVVVOOOO;;;;;;;;;;;;;;;OOOVVVVXXXXXXXXXXXXXXXXXXXXXXXXXX|||XXXXXXXXXCC=&nbsp---.<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\\_XXXXXXXXXXX000000000XXXXXXXXXXXXXXCCCCCVVOOOOOOO:::::::::::::::::::::::VVVVXXXXXXXXXXXXXXXXXXXXX|||CXXXXXXCCCC=__&nbsp.<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\\xXXXXXXXXXX000000XXXXXXXXXXXXXXCCCCVVOOOOOOO:::::&nbsp::::&nbsp::::&nbsp::::&nbsp::&nbsp.&nbsp..VVVCXXXXXXXXXXXXXXXXXXXXX|XXCCCCCXc&nbsp&nbspcCCC=___<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\\XXXXXXXXXXXX00000XXXXXXXXXXXXXXCCCCOOO:::&nbsp::&nbsp::::::&nbsp..::::&nbsp...&nbsp&nbsp.&nbsp.&nbsp.&nbsp.&nbspXXXXXXXXXXXXXXXXXXXXXXXXX\\\CCCCCCXXXXCCC=___&nbsp.<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\\\\00000000000XXXXXXXXXXXXXCCCCCC::::::&nbsp::&nbsp.&nbsp.&nbsp&nbsp.&nbsp&nbsp.&nbsp.&nbsp&nbsp&nbsp&nbsp&nbsp.&nbsp&nbsp&nbsp..&nbsp&nbsp&nbsp.&nbsp.&nbsp.&nbsp.&nbspXXXXXXXXXXXXXX0000XXXXCCCCCCXXXCCCCC===__<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\\00000000CXXXXXXXXXXXXXXXCCCCC:::::&nbsp:::&nbsp.&nbsp&nbsp.&nbsp.&nbsp..&nbsp.&nbsp.&nbsp.&nbsp&nbsp&nbsp.&nbsp.&nbsp.&nbsp&nbsp&nbsp&nbsp.&nbsp.&nbsp.&nbsp.&nbspXXXXXXXXXXXXXXXXXXXXXXCCCCCCCZZZSSSSS==--<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp_____\\0000000CXXXXXXXXXXXXXXXCCCC:::::::::&nbsp...&nbsp.&nbsp..&nbsp.&nbsp.&nbsp.&nbsp.&nbsp.&nbsp.&nbsp&nbsp.&nbsp&nbsp.&nbsp.&nbsp==xxxx=-XXXXXXXXXXXXXXXXXXXXCCCCCCCZZZZZSSSSXXX-<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\&nbsp&nbsp//00000000000000000XXXXXXXXCC::======::&nbsp.&nbsp.&nbsp&nbsp.&nbsp.&nbsp&nbsp&nbsp.&nbsp&nbsp&nbsp|&nbsp.&nbsp&nbsp&nbsp&nbsp.&nbsp==XXXXXF&nbsp.&nbsp&nbsp&nbspXXXXXXXXXXXXXXXXXXXCCCCCCCCZZSSSXXXXXXX_<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\\//000000000000XXXXXXX00000XXXC:XXXXXXXXXXXX===--&nbsp&nbsp.&nbsp.&nbsp&nbsp&nbsp&nbsp|&nbsp.&nbsp&nbsp&nbspxXXF&nbsp______&nbsp&nbsp&nbsp&nbsp&nbsp&nbspXXXXXXXXXXXXXXXXXXXXX&nbsp&nbspXXXXXXXX\<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\&nbsp&nbsp&nbsp\&nbsp\/00000000XXXXXXXXXXXXXXX00000CC:::&nbsp:::____________\&nbsp.&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp/&nbsp&nbsp-/&nbsp█████&nbsp&nbsp\=&nbsp&nbsp&nbsp&nbspXXXXXXXXXXXXXXXXXXXXXXXXXXXX&nbsp\&nbsp\\\<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\&nbsp&nbsp&nbsp\\000XXXXXXXXX0000XXXXXXXXX00CCC::&nbsp::&nbsp/&nbsp&nbsp&nbsp&nbsp████&nbsp&nbsp&nbsp\:::\&nbsp.&nbsp.&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp/___███$█_/&nbsp&nbsp|&nbsp&nbsp&nbspXXXXXXXXXXXXXCCCC__//&nbsp&nbsp&nbspXXX&nbsp&nbsp\&nbsp&nbsp\\\&nbsp<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\\=\\\00XXXXXXXXXXXXXXXXXXXXXXXXCCC::&nbsp::::\____██$█__/::::|&nbsp...&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp.....¨¨¨&nbsp&nbsp&nbsp&nbsp/::&nbsp&nbspXXXXXXXXXXXCCCCC/&nbsp/&nbsp&nbsp&nbsp/&nbsp&nbsp||\\&nbsp&nbsp\&nbsp&nbsp\\\<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\&nbsp\\00SSSSS0000XXXXXXXXXXXXXXX:::XX.:&nbsp...\&nbsp¨¨¨¨¨¨¨¨¨¨::::/&nbsp&nbsp....&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp::..&nbsp____//:::&nbsp&nbsp&nbsp&nbspXXXX0000000/&nbsp&nbsp&nbsp/&nbsp&nbsp//&nbsp&nbsp|&nbsp||\\\\&nbsp&nbsp&nbsp&nbsp&nbsp\\<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp¨¨¨\\000000BBBBXXXXXXXXXXXXXC:::X&nbsp.&nbsp&nbsp:::::::::::::::::.&nbsp&nbsp&nbsp..&nbsp..&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp.&nbsp::::::&nbsp..&nbsp&nbsp&nbsp&nbsp&nbspXXXX000/&nbsp&nbsp&nbsp&nbsp&nbsp/&nbsp&nbsp/&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\\&nbsp\&nbsp&nbsp&nbsp&nbsp&nbsp\<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp¨¨\0000000000000XXX00====C:::X&nbsp&nbsp&nbsp.::;;::::::::::;;:&nbsp&nbsp&nbsp&nbsp&nbsp....&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp::&nbsp&nbsp::&nbsp..&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspXXX000&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp/&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\0000000°°°°0°°&nbsp&nbsp&nbsp&nbsp&nbsp°°//::X&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp..::::::::::;;&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp....&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp.&nbsp.&nbsp.&nbsp.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspXX00&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp°<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp¨¨¨¨¨\\&nbsp&nbsp//&nbsp&nbsp&nbsp&nbsp&nbsp//&nbsp&nbsp&nbsp¨¨¨X&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp..&nbsp....:::::;&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp....&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp::&nbsp.&nbsp&nbsp.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspXXX&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp°°//&nbsp&nbsp&nbsp&nbsp&nbsp°°&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp.::::&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp...&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp...&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspXXX&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp°°&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp/::::&nbsp&nbsp&nbsp¨¨&nbsp&nbsp&nbsp&nbsp&nbsp..&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspXXX&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp/::;.\\&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp....====...&nbsp&nbsp&nbsp&nbsp//.&nbsp&nbsp::::&nbsp&nbsp&nbsp_/XXX&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\_<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp....\\\\\\\\LLLLLLL////////&nbsp::::&nbsp&nbsp&nbsp&nbsp_/&nbsp&nbspXX&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp¨¨¨---<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:::&nbsp&nbsp==|__|&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp|=|//&nbsp&nbsp&nbsp&nbsp&nbsp::.&nbsp&nbsp__/&nbsp&nbsp&nbspI<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp..&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspYYYYYYYYYYYY&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp.&nbsp__/&nbsp&nbsp&nbsp&nbsp&nbsp/<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp¨\&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspOOOOOOO&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp.&nbsp&nbsp_/&nbsp&nbsp&nbsp&nbsp¨¨¨<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp¨\&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp*&nbsp&nbsp&nbsp&nbsp.&nbsp.&nbsp.&nbsp&nbsp&nbsp&nbsp.&nbsp&nbsp&nbsp&nbsp.&nbsp&nbsp&nbsp/<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp¨\&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:.&nbsp&nbsp&nbsp&nbsp:::&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp.&nbsp&nbsp&nbsp/<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp¨¨\&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp&nbsp&nbsp&nbsp:::.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp.&nbsp&nbsp&nbsp/<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp¨¨\&nbsp&nbsp&nbsp::&nbsp:::.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp/¨<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp¨¨\&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp/¨<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp¨¨-------¨¨¨<br/>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Gl-pages : " />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Gl-pages</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/vasech/gl-pages">View on GitHub</a>
-
-          <h1 id="project_title">Gl-pages</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/vasech/gl-pages/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/vasech/gl-pages/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Gl-pages maintained by <a href="https://github.com/vasech">vasech</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+</span>
+<div id="quiz">
+	<div>Who do you think is that?</div>
+	<div id="buttons">
+		<button id="josef" style="padding:5px 10px; margin: 10px 0 0 0">Josef Stalin</button>
+		<button id="wlad1" style="padding:5px 10px; margin: 10px 0 0 0">Wladimir Lenin</button>
+		<button id="karl" style="padding:5px 10px; margin: 10px 0 0 0">Karl Marx</button>
+		<button id="fried" style="padding:5px 10px; margin: 10px 0 0 0">Friedrich Engels</button>
+		<button id="wlad2" style="padding:5px 10px; margin: 10px 0 0 0">Wladimir Putin</button>
+		<button id="boris" style="padding:5px 10px; margin: 10px 0 0 0">Boris Jelzin</button>
+		<button id="alex" style="padding:5px 10px; margin: 10px 0 0 0">Alexander Puschkin</button>
+		<button id="serg" style="padding:5px 10px; margin: 10px 0 0 0">Sergei Prokofjew</button>
+		<button id="nikol" style="padding:5px 10px; margin: 10px 0 0 0">Nikolai Rimski-Korsakow</button>
+		<button id="vass1" style="padding:5px 10px; margin: 10px 0 0 0">Vassili Kandinski</button>
+		<button id="solution" style="padding:5px 10px; margin: 10px 0 0 0">Vassili Saizev</button>
+	</div>
+	<div id="output" style="margin-top:20px"></div>
+</div>
+</body>
+<script>
+	document.getElementById('josef').onclick = function(){
+		document.getElementById('output').innerHTML = "Common, it's a girl! Don't you see that??";
+	}
+	document.getElementById('wlad1').onclick = function(){
+		document.getElementById('output').innerHTML = "Lenin is death! A long time ago! You fuck!";
+	}
+	document.getElementById('karl').onclick = function(){
+		document.getElementById('output').innerHTML = "She is also a theory human but not so clever! (but clever).";
+	}
+	document.getElementById('fried').onclick = function(){
+		document.getElementById('output').innerHTML = "Engels had a beard!";
+	}
+	document.getElementById('wlad2').onclick = function(){
+		document.getElementById('output').innerHTML = "Putin looks much better! (for gay people).";
+	}
+	document.getElementById('boris').onclick = function(){
+		document.getElementById('output').innerHTML = "Jelzin had natural hair! (downstairs).";
+	}
+	document.getElementById('alex').onclick = function(){
+		document.getElementById('output').innerHTML = "Puschkin fucked little children! She fucks you!";
+	}
+	document.getElementById('serg').onclick = function(){
+		document.getElementById('output').innerHTML = "She doesnt play music very often.";
+	}
+	document.getElementById('nikol').onclick = function(){
+		document.getElementById('output').innerHTML = "She is not in love with arabian womans!";
+	}
+	document.getElementById('vass1').onclick = function(){
+		document.getElementById('output').innerHTML = "She can't even draw a straight line! (When she is drunk).";
+	}
+	document.getElementById('solution').onclick = function(){
+		document.getElementById('output').innerHTML = "You got it! Nobody can get so many points in headshots in lazertag!";
+	}
+	//if(selectElementByID("o"))
+	// stalin Common, it's a girl! Don't you see that??
+	// Lenin. Lenin is death! A long time ago! You stupid!
+	// Karl Marx. She is also a theory human but not so clever! (but clever).
+	// Engels had a beard!
+	// Putin looks much better! (for gay people).
+	// Jelzin had natural hair! (downstairs).
+	// Kandinski. She can't even draw a straight line! (When she is drunk).
+	// Saizev. You got it! Nobody can get so many points in headshots in lazertag!
+</script>
 </html>
